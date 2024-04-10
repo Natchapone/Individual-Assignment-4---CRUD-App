@@ -1,0 +1,23 @@
+<div class="container">
+  <h1>Personal Song List</h1>
+
+  <p>Add songs below</p>
+
+  <ul>
+    {{#each songs}}
+    <li>
+      {{this.name}}
+      <form action="/song/{{this.id}}/edit" method="GET" style="display: inline;">
+        <button type="submit">Edit</button>
+      </form>
+      <form action="/song/{{this.id}}/delete" method="POST" style="display: inline;">
+        <button type="submit">Delete</button>
+      </form>
+    </li>
+    {{/each}}
+  </ul>
+  <form id="edit" action="/song" method="POST">
+    <input type="text" name="songName" placeholder="Enter Song Name">
+    <button type="submit">Add Song</button>
+  </form>
+</div>

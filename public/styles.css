@@ -1,0 +1,20 @@
+body {
+    background-color: lightgray;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    border: 2px solid darkgray;
+    margin-top: 100px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#edit {
+    padding-bottom: 40px;
+}
